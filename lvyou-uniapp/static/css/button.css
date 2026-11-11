@@ -1,0 +1,208 @@
+/**
+ * 荣e游通用按钮样式类
+ * 不使用button组件,纯CSS样式实现
+ */
+
+/* —— 基础按钮样式 —— */
+.ry-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 32rpx;
+	border-radius: 8rpx;
+	font-size: 28rpx;
+	font-weight: 500;
+	line-height: 1;
+	transition: all 0.3s;
+	cursor: pointer;
+	user-select: none;
+}
+
+.ry-btn:active {
+	opacity: 0.8;
+	transform: scale(0.98);
+}
+
+/* —— 尺寸变体 —— */
+.ry-btn--large {
+	height: 88rpx;
+	padding: 0 48rpx;
+	font-size: 32rpx;
+	font-weight: 600;
+	border-radius: 44rpx;
+}
+
+.ry-btn--medium {
+	height: 80rpx;
+	padding: 0 40rpx;
+	font-size: 28rpx;
+	border-radius: 40rpx;
+}
+
+.ry-btn--small {
+	height: 64rpx;
+	padding: 0 24rpx;
+	font-size: 24rpx;
+	border-radius: 32rpx;
+}
+
+.ry-btn--mini {
+	height: 48rpx;
+	padding: 0 20rpx;
+	font-size: 22rpx;
+	border-radius: 24rpx;
+}
+
+/* —— 颜色变体 —— */
+/* 主色按钮 */
+.ry-btn--primary {
+	background: linear-gradient(135deg, #FF6600 0%, #FF8A3D 100%);
+	color: #FFFFFF;
+	box-shadow: 0 8rpx 24rpx rgba(255, 102, 0, 0.3);
+}
+
+.ry-btn--primary:active {
+	box-shadow: 0 4rpx 12rpx rgba(255, 102, 0, 0.3);
+}
+
+/* 次要按钮 */
+.ry-btn--secondary {
+	background-color: #F5F5F5;
+	color: #666666;
+}
+
+/* 成功按钮 */
+.ry-btn--success {
+	background: linear-gradient(135deg, #2EAF6A 0%, #52C41A 100%);
+	color: #FFFFFF;
+	box-shadow: 0 8rpx 24rpx rgba(46, 175, 106, 0.3);
+}
+
+/* 警告按钮 */
+.ry-btn--warning {
+	background: linear-gradient(135deg, #FFB800 0%, #FFD700 100%);
+	color: #FFFFFF;
+	box-shadow: 0 8rpx 24rpx rgba(255, 184, 0, 0.3);
+}
+
+/* 危险按钮 */
+.ry-btn--danger {
+	background: linear-gradient(135deg, #FF4D4F 0%, #FF7875 100%);
+	color: #FFFFFF;
+	box-shadow: 0 8rpx 24rpx rgba(255, 77, 79, 0.3);
+}
+
+/* 信息按钮 */
+.ry-btn--info {
+	background: linear-gradient(135deg, #2979FF 0%, #40A9FF 100%);
+	color: #FFFFFF;
+	box-shadow: 0 8rpx 24rpx rgba(41, 121, 255, 0.3);
+}
+
+/* —— 样式变体 —— */
+/* 镂空按钮 */
+.ry-btn--plain {
+	background: transparent;
+	border: 2rpx solid #FF6600;
+	color: #FF6600;
+	box-shadow: none;
+}
+
+.ry-btn--plain.ry-btn--primary {
+	border-color: #FF6600;
+	color: #FF6600;
+	background: transparent;
+}
+
+.ry-btn--plain.ry-btn--success {
+	border-color: #2EAF6A;
+	color: #2EAF6A;
+	background: transparent;
+}
+
+.ry-btn--plain.ry-btn--warning {
+	border-color: #FFB800;
+	color: #FFB800;
+	background: transparent;
+}
+
+.ry-btn--plain.ry-btn--danger {
+	border-color: #FF4D4F;
+	color: #FF4D4F;
+	background: transparent;
+}
+
+.ry-btn--plain.ry-btn--info {
+	border-color: #2979FF;
+	color: #2979FF;
+	background: transparent;
+}
+
+/* 文字按钮 */
+.ry-btn--text {
+	background: transparent;
+	color: #FF6600;
+	box-shadow: none;
+	padding: 0;
+}
+
+/* —— 状态 —— */
+/* 禁用状态 */
+.ry-btn--disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.ry-btn--disabled:active {
+	opacity: 0.5;
+	transform: none;
+}
+
+/* 加载状态 */
+.ry-btn--loading {
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+
+/* —— 宽度变体 —— */
+.ry-btn--block {
+	width: 100%;
+}
+
+/* —— 圆形按钮 —— */
+.ry-btn--circle {
+	border-radius: 50%;
+	padding: 0;
+	width: 88rpx;
+	height: 88rpx;
+}
+
+.ry-btn--circle.ry-btn--large {
+	width: 96rpx;
+	height: 96rpx;
+}
+
+.ry-btn--circle.ry-btn--medium {
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.ry-btn--circle.ry-btn--small {
+	width: 64rpx;
+	height: 64rpx;
+}
+
+.ry-btn--circle.ry-btn--mini {
+	width: 48rpx;
+	height: 48rpx;
+}
+
+/* —— 按钮组 —— */
+.ry-btn-group {
+	display: flex;
+	gap: 20rpx;
+}
+
+.ry-btn-group .ry-btn {
+	flex: 1;
+}

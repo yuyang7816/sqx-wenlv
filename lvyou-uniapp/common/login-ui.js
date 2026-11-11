@@ -1,0 +1,41 @@
+/**
+ * Login page copy (UTF-8 source of truth via escapes).
+ * Do NOT put Chinese in login.vue template.
+ */
+export const LOGIN_UI = {
+	tagText: '\u53d1\u73b0 \u00b7 \u4f53\u9a8c \u00b7 \u5206\u4eab',
+	brandTitle: '\u7701\u94b1\u5144\u6587\u65c5',
+	subtitle: '\u4e00\u7ad9\u5f0f\u6587\u65c5\uff0c\u5403\u5f97\u5730\u9053\u73a9\u5f97\u660e\u767d',
+	tabSms: '\u9a8c\u8bc1\u7801\u767b\u5f55',
+	tabPassword: '\u5bc6\u7801\u767b\u5f55',
+	placeholderPhone: '\u8bf7\u8f93\u5165\u624b\u673a\u53f7',
+	placeholderCode: '\u8bf7\u8f93\u5165\u9a8c\u8bc1\u7801',
+	placeholderPassword: '\u8bf7\u8f93\u5165\u767b\u5f55\u5bc6\u7801',
+	forgetPassword: '\u5fd8\u8bb0\u5bc6\u7801\uff1f',
+	agreePrefix: '\u6211\u5df2\u9605\u8bfb\u5e76\u540c\u610f',
+	userAgreement: '\u300a\u7528\u6237\u534f\u8bae\u300b',
+	and: '\u548c',
+	privacyPolicy: '\u300a\u9690\u79c1\u653f\u7b56\u300b',
+	submitLogin: '\u767b\u5f55',
+	submitLoginRegister: '\u767b\u5f55 / \u6ce8\u518c',
+	noAccount: '\u8fd8\u6ca1\u6709\u8d26\u53f7\uff1f',
+	goRegister: '\u53bb\u6ce8\u518c',
+	otherLogin: '\u5176\u4ed6\u767b\u5f55\u65b9\u5f0f',
+	wxLogin: '\u5fae\u4fe1\u767b\u5f55',
+	footTitle: '\u6f14\u793a Mock \u767b\u5f55',
+	footSms: '\u9a8c\u8bc1\u7801\uff1a\u4efb\u610f\u624b\u673a\u53f7 + ',
+	footPassword: '\u5bc6\u7801\uff1a',
+	getCode: '\u83b7\u53d6\u9a8c\u8bc1\u7801',
+	resendSuffix: 's \u540e\u91cd\u53d1',
+	toastWrongPhone: '\u8bf7\u8f93\u5165\u6b63\u786e\u624b\u673a\u53f7',
+	toastCodeSent: '\u9a8c\u8bc1\u7801\u5df2\u53d1\u9001\uff1a',
+	toastAgree: '\u8bf7\u5148\u540c\u610f\u534f\u8bae',
+	toastWxSuccess: '\u5fae\u4fe1\u767b\u5f55\u6210\u529f',
+	toastLoginSuccess: '\u767b\u5f55\u6210\u529f',
+	toastWrongCode: '\u8bf7\u8f93\u51656\u4f4d\u9a8c\u8bc1\u7801',
+	toastNeedPassword: '\u8bf7\u8f93\u5165\u767b\u5f55\u5bc6\u7801',
+	modalNoAccountTitle: '\u8d26\u53f7\u4e0d\u5b58\u5728',
+	modalNoAccountContent: '\u8be5\u624b\u673a\u53f7\u5c1a\u672a\u6ce8\u518c\uff0c\u662f\u5426\u524d\u5f80\u6ce8\u518c\uff1f',
+	modalGoRegister: '\u53bb\u6ce8\u518c',
+	toastWrongPassword: '\u5bc6\u7801\u9519\u8bef\uff0c\u8bf7\u91cd\u8bd5'
+};

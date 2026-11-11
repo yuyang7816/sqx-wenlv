@@ -1,0 +1,227 @@
+export const protectedRoutes = [
+  {
+    path: '/404',
+    name: 'not-found',
+    component: () => import('@/views/NotFoundView.vue'),
+    meta: { title: '页面不存在', hidden: true },
+  },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: () => import('@/views/DashboardView.vue'),
+    meta: { title: '数据统计', icon: 'DataBoard', affix: true },
+  },
+  {
+    path: '/kefu-im',
+    name: 'business-kefu-im',
+    component: () => import('@/views/business/KefuImView.vue'),
+    meta: { title: '在线聊天', permission: 'lvyou:kefuIm:session:page' },
+  },
+  {
+    path: '/users',
+    name: 'users',
+    component: () => import('@/views/user/UserListView.vue'),
+    meta: { title: 'C端用户', icon: 'User', permission: 'base:user:page' },
+  },
+  {
+    path: '/users/cancel-account',
+    name: 'cancel-account',
+    component: () => import('@/views/user/CancelAccountListView.vue'),
+    meta: { title: '注销审核', icon: 'User', permission: 'base:cancelAccount:page' },
+  },
+  {
+    path: '/business',
+    name: 'business',
+    redirect: '/business/banners',
+    meta: { title: '业务管理', icon: 'Files' },
+    children: [
+      {
+        path: '/business/banners',
+        redirect: { path: '/business/home-module', query: { tab: 'banner' } },
+      },
+      {
+        path: '/business/messages',
+        name: 'business-messages',
+        component: () => import('@/views/business/MessagesView.vue'),
+        meta: { title: '消息管理' },
+      },
+      {
+        path: '/business/sms-templates',
+        redirect: '/system/sms-templates',
+      },
+      {
+        path: '/business/merchant-audit',
+        name: 'business-merchant-audit',
+        component: () => import('@/views/business/MerchantAuditView.vue'),
+        meta: { title: '商户审核', permission: 'lvyou:merchant:apply:page' },
+      },
+      {
+        path: '/business/merchant-manage',
+        name: 'business-merchant-manage',
+        component: () => import('@/views/business/MerchantManageView.vue'),
+        meta: { title: '商户管理', permission: 'lvyou:merchant:page' },
+      },
+      {
+        path: '/business/merchant-store-type',
+        name: 'business-merchant-store-type',
+        component: () => import('@/views/business/MerchantStoreTypeView.vue'),
+        meta: { title: '入驻类型', permission: 'lvyou:merchant:page' },
+      },
+      {
+        path: '/business/order',
+        name: 'business-order',
+        component: () => import('@/views/business/OrderManageView.vue'),
+        meta: { title: '订单监管', permission: 'lvyou:order:page' },
+      },
+      {
+        path: '/business/hotel',
+        name: 'business-hotel',
+        component: () => import('@/views/business/HotelManageView.vue'),
+        meta: { title: '酒店管理', permission: 'lvyou:hotel:page' },
+      },
+      {
+        path: '/business/route',
+        name: 'business-route',
+        component: () => import('@/views/business/RouteManageView.vue'),
+        meta: { title: '线路管理', permission: 'lvyou:route:page' },
+      },
+      {
+        path: '/business/activity',
+        name: 'business-activity',
+        component: () => import('@/views/business/ActivityManageView.vue'),
+        meta: { title: '活动管理', permission: 'lvyou:activity:page' },
+      },
+      {
+        path: '/business/scenic',
+        name: 'business-scenic',
+        component: () => import('@/views/business/ScenicManageView.vue'),
+        meta: { title: '景区管理', permission: 'lvyou:scenic:page' },
+      },
+      {
+        path: '/business/notice',
+        name: 'business-notice',
+        component: () => import('@/views/business/NoticeManageView.vue'),
+        meta: { title: '公告管理', permission: 'lvyou:notice:page' },
+      },
+      {
+        path: '/business/coupon',
+        name: 'business-coupon',
+        component: () => import('@/views/business/CouponTemplateView.vue'),
+        meta: { title: '优惠券模板', permission: 'lvyou:coupon:template:page' },
+      },
+      {
+        path: '/business/withdraw',
+        name: 'business-withdraw',
+        component: () => import('@/views/business/WithdrawAuditView.vue'),
+        meta: { title: '提现审核', permission: 'lvyou:withdraw:page' },
+      },
+      {
+        path: '/business/heritage',
+        name: 'business-heritage',
+        component: () => import('@/views/business/HeritageManageView.vue'),
+        meta: { title: '非遗管理', permission: 'lvyou:heritage:shop:page' },
+      },
+      {
+        path: '/business/payment',
+        name: 'business-payment',
+        component: () => import('@/views/business/PaymentManageView.vue'),
+        meta: { title: '支付监管', permission: 'lvyou:payment:page' },
+      },
+      {
+        path: '/business/platform-config',
+        name: 'business-platform-config',
+        component: () => import('@/views/business/PlatformConfigView.vue'),
+        meta: { title: '平台配置', permission: 'sys:config:list' },
+      },
+      {
+        path: '/business/home-module',
+        name: 'business-home-module',
+        component: () => import('@/views/business/HomeModuleView.vue'),
+        meta: { title: '首页配置', permission: 'lvyou:homeModule:page' },
+      },
+      {
+        path: '/business/canteen',
+        name: 'business-canteen',
+        component: () => import('@/views/business/CanteenManageView.vue'),
+        meta: { title: '餐饮预约', permission: 'lvyou:canteen:page' },
+      },
+      {
+        path: '/business/invite',
+        name: 'business-invite',
+        component: () => import('@/views/business/InviteManageView.vue'),
+        meta: { title: '邀请分销', permission: 'lvyou:invite:relation:page' },
+      },
+      {
+        path: '/business/feedback',
+        name: 'business-feedback',
+        component: () => import('@/views/business/FeedbackManageView.vue'),
+        meta: { title: '意见反馈', permission: 'lvyou:feedback:page' },
+      },
+    ],
+  },
+  {
+    path: '/system',
+    name: 'system',
+    redirect: '/system/admins',
+    meta: { title: '系统管理', icon: 'Setting' },
+    children: [
+      {
+        path: '/system/admins',
+        name: 'system-admins',
+        component: () => import('@/views/system/AdminManagerView.vue'),
+        meta: { title: '管理员管理', permission: 'sys:user:list' },
+      },
+      {
+        path: '/system/roles',
+        name: 'system-roles',
+        component: () => import('@/views/system/RoleManagerView.vue'),
+        meta: { title: '角色管理', permission: 'sys:role:list' },
+      },
+      {
+        path: '/system/menus',
+        name: 'system-menus',
+        component: () => import('@/views/system/MenuManagerView.vue'),
+        meta: { title: '菜单管理', permission: 'sys:menu:list' },
+      },
+      {
+        path: '/system/permissions',
+        name: 'system-permissions',
+        component: () => import('@/views/system/PermissionManagerView.vue'),
+        meta: { title: '权限管理', permission: 'sys:menu:list' },
+      },
+      {
+        path: '/system/dicts',
+        name: 'system-dicts',
+        component: () => import('@/views/system/DictManagerView.vue'),
+        meta: { title: '字典管理', permission: 'sys:dict:list' },
+      },
+      {
+        path: '/system/configs',
+        name: 'system-configs',
+        component: () => import('@/views/system/SystemConfigView.vue'),
+        meta: { title: '系统配置', permission: 'sys:config:list' },
+      },
+      {
+        path: '/system/logs',
+        name: 'system-logs',
+        component: () => import('@/views/system/LogManagerView.vue'),
+        meta: { title: '操作日志', permission: 'sys:log:list' },
+      },
+      {
+        path: '/system/sms-templates',
+        name: 'system-sms-templates',
+        component: () => import('@/views/business/SmsTemplateView.vue'),
+        meta: { title: '短信模板' },
+      },
+    ],
+  },
+]
+
+export const whiteRoutes = [
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/LoginView.vue'),
+    meta: { title: '登录' },
+  },
+]

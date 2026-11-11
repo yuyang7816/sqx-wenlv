@@ -1,0 +1,49 @@
+/** Heritage address pages UI (UTF-8 via escapes). */
+export const HERITAGE_ADDRESS_UI = {
+	listTitle: '\u6536\u8d27\u5730\u5740',
+	listSubtitle: '\u9009\u62e9\u6216\u7ba1\u7406\u6536\u8d27\u5730\u5740',
+	listCountLabel: '\u4e2a\u5730\u5740',
+	emptyTitle: '\u6682\u65e0\u6536\u8d27\u5730\u5740',
+	emptyHint: '\u6dfb\u52a0\u5730\u5740\u540e\u53ef\u5728\u4e0b\u5355\u65f6\u4f7f\u7528',
+	btnAdd: '\u65b0\u589e\u6536\u8d27\u5730\u5740',
+	tagDefault: '\u9ed8\u8ba4',
+	btnEdit: '\u7f16\u8f91',
+	btnDelete: '\u5220\u9664',
+	btnSetDefault: '\u8bbe\u4e3a\u9ed8\u8ba4',
+	toastSelected: '\u5730\u5740\u5df2\u9009\u62e9',
+	toastDefault: '\u5df2\u8bbe\u4e3a\u9ed8\u8ba4\u5730\u5740',
+	toastDeleted: '\u5730\u5740\u5df2\u5220\u9664',
+	deleteTitle: '\u5220\u9664\u5730\u5740',
+	deleteContent: '\u786e\u5b9a\u5220\u9664\u8be5\u6536\u8d27\u5730\u5740\u5417\uff1f',
+	deleteConfirm: '\u5220\u9664',
+	deleteCancel: '\u53d6\u6d88',
+	footerList: '\u975e\u9057 \u00b7 \u6536\u8d27\u5730\u5740',
+	formAddTitle: '\u65b0\u589e\u5730\u5740',
+	formEditTitle: '\u7f16\u8f91\u5730\u5740',
+	formTip: '\u8bf7\u586b\u5199\u771f\u5b9e\u6536\u8d27\u4fe1\u606f\uff0c\u4ee5\u4fbf\u987a\u5229\u914d\u9001',
+	labelName: '\u6536\u8d27\u4eba',
+	labelPhone: '\u624b\u673a\u53f7',
+	labelRegion: '\u6240\u5728\u5730\u533a',
+	labelDetail: '\u8be6\u7ec6\u5730\u5740',
+	labelDefault: '\u8bbe\u4e3a\u9ed8\u8ba4\u5730\u5740',
+	placeholderName: '\u8bf7\u8f93\u5165\u6536\u8d27\u4eba\u59d3\u540d',
+	placeholderPhone: '\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801',
+	placeholderRegion: '\u8bf7\u9009\u62e9\u6240\u5728\u5730\u533a',
+	placeholderDetail: '\u8857\u9053\u3001\u697c\u724c\u53f7\u7b49\u8be6\u7ec6\u5730\u5740',
+	btnSave: '\u4fdd\u5b58\u5730\u5740',
+	btnDeleteForm: '\u5220\u9664\u5730\u5740',
+	toastSaveSuccess: '\u4fdd\u5b58\u6210\u529f',
+	toastInvalid: '\u8bf7\u586b\u5199\u5b8c\u6574\u5730\u5740\u4fe1\u606f',
+	toastPhoneInvalid: '\u8bf7\u8f93\u5165\u6b63\u786e\u7684\u624b\u673a\u53f7',
+	footerForm: '\u975e\u9057 \u00b7 \u6536\u8d27\u5730\u5740'
+};
+
+export const HERITAGE_REGION_OPTIONS = [
+	'\u91cd\u5e86\u5e02 \u8363\u660c\u533a',
+	'\u91cd\u5e86\u5e02 \u6e1d\u4e2d\u533a',
+	'\u91cd\u5e86\u5e02 \u6c5f\u5317\u533a',
+	'\u91cd\u5e86\u5e02 \u5357\u5cb8\u533a',
+	'\u91cd\u5e86\u5e02 \u9ad8\u65b0\u533a'
+];
+
+export const HERITAGE_ADDRESS_FORM_PATH = '/mobile-design/heritage/address-form';

@@ -1,0 +1,5 @@
+# Created at 2026-10-22T10:10:29.526
+Boot Manifest-JAR contains absolute paths in classpath 'D:\ideaproject\lvyou_work\lvyou-server\sqx-common\sqx-common-pay\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

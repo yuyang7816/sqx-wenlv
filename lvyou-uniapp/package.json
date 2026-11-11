@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "scan:corruption": "node scripts/scan-corruption.js"
+  },
+  "dependencies": {
+    "element-china-area-data": "^6.1.0"
+  }
+}

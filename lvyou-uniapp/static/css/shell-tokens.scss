@@ -1,0 +1,95 @@
+/**
+ * 荣e游 uniapp Shell Design Tokens
+ * 来源：20 张设计稿 + layout-specs brandHex 聚合（task logo-2a3bd7d5-md-shell）
+ * 用法：App.vue 全局引入；页面 scss 可直接使用 var(--ry-*)
+ */
+
+:root,
+page {
+	/* —— 品牌主色（首页/线路/公交/预订等） —— */
+	--ry-brand: #FF6600;
+	--ry-brand-dark: #E65C00;
+	--ry-brand-light: #FFF3EB;
+	--ry-brand-disabled: #FFCC99;
+
+	/* —— 页面与卡片 —— */
+	--ry-page-bg: #F5F7FF;
+	--ry-card-bg: #FFFFFF;
+	--ry-card-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.06);
+
+	/* —— 顶栏（设计稿均为白底黑字） —— */
+	--ry-nav-bg: #FFFFFF;
+	--ry-nav-title-color: #333333;
+	--ry-nav-icon-color: #333333;
+	--ry-nav-height: 88rpx;
+
+	/* —— TabBar —— */
+	--ry-tabbar-active: #FF6600;
+	--ry-tabbar-inactive: #999999;
+	--ry-tabbar-bg: #FFFFFF;
+
+	/* —— 圆角（卡片 24rpx 对齐 main.css .radius） —— */
+	--ry-radius-xs: 8rpx;
+	--ry-radius-sm: 12rpx;
+	--ry-radius-md: 16rpx;
+	--ry-radius-lg: 24rpx;
+	--ry-radius-card: 24rpx;
+	--ry-radius-pill: 999rpx;
+
+	/* —— 模块 accent（layout-specs brandHex） —— */
+	--ry-module-default: #FF6600;
+	--ry-module-goose: #FF7A00;
+	--ry-module-scenic: #2EAF6A;
+	--ry-module-hotel: #2979FF;
+	--ry-module-route: #FF6600;
+	--ry-module-activity: #9C27B0;
+	--ry-module-activity-detail: #9D35F0;
+	--ry-module-heritage: #5D4037;
+	--ry-module-heritage-shop: #B45D2D;
+	--ry-module-ai: #FF701F;
+	--ry-module-store: #F37B1D;
+	--ry-module-feedback: #FF7920;
+
+	/* —— 文字 —— */
+	--ry-text-primary: #333333;
+	--ry-text-secondary: #666666;
+	--ry-text-hint: #999999;
+	--ry-text-inverse: #FFFFFF;
+	--ry-text-inactive: #666666;
+	--ry-price-color: #FF6600;
+
+	/* —— 间距 —— */
+	--ry-page-padding-x: 24rpx;
+	--ry-page-padding-y: 20rpx;
+	--ry-card-gap: 20rpx;
+	--ry-section-gap: 32rpx;
+
+	/* —— 缺图占位 —— */
+	--ry-placeholder-logo: '/static/logo.png';
+
+	/* —— 同步 uview-plus 主色（覆盖默认 #3c9cff） —— */
+	--up-primary: #FF6600;
+	--up-primary-dark: #E65C00;
+	--up-primary-disabled: #FFCC99;
+	--up-primary-light: #FFF3EB;
+	--up-page-bg-color: #F5F7FF;
+	--up-navbar-bg-color: #FFFFFF;
+}
+
+/* 页面级背景 */
+.ry-page {
+	min-height: 100vh;
+	background-color: var(--ry-page-bg);
+}
+
+/* 卡片容器 */
+.ry-card {
+	background-color: var(--ry-card-bg);
+	border-radius: var(--ry-radius-card);
+	box-shadow: var(--ry-card-shadow);
+}
+
+/* 缺图占位图样式 */
+.ry-placeholder-img {
+	background-color: var(--ry-brand-light);
+}

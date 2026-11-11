@@ -1,0 +1,899 @@
+
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/order/list",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/profile",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/destination/select",
+			"style": {
+				"navigationBarTitleText": "选择城市",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "服务详情",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/order/review",
+			"style": {
+				"navigationBarTitleText": "发表评价",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/order/logistics",
+			"style": {
+				"navigationBarTitleText": "物流详情",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/merchant/service",
+			"style": {
+				"navigationBarTitleText": "商户服务",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/forget",
+			"style": {
+				"navigationBarTitleText": "找回密码",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/asset",
+			"style": {
+				"navigationBarTitleText": "资产中心",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/my/coupons",
+			"style": {
+				"navigationBarTitleText": "我的优惠券",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/invite",
+			"style": {
+				"navigationBarTitleText": "邀请好友",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/inviteProcess",
+			"style": {
+				"navigationBarTitleText": "邀请好友",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/team",
+			"style": {
+				"navigationBarTitleText": "我的团队",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/my/commission",
+			"style": {
+				"navigationBarTitleText": "收益明细",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/my/coupon-center",
+			"style": {
+				"navigationBarTitleText": "领券中心",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/service",
+			"style": {
+				"navigationBarTitleText": "客服中心",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/im-chat",
+			"style": {
+				"navigationBarTitleText": "在线客服",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/help",
+			"style": {
+				"navigationBarTitleText": "帮助中心",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/settings",
+			"style": {
+				"navigationBarTitleText": "设置中心",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/wallet",
+			"style": {
+				"navigationBarTitleText": "我的钱包",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/wallet-recharge",
+			"style": {
+				"navigationBarTitleText": "充值",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/wallet-withdraw",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/wallet-withdraw-account",
+			"style": {
+				"navigationBarTitleText": "提现账号绑定",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/my/wallet-transactions",
+			"style": {
+				"navigationBarTitleText": "资金明细",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/my/wallet-withdraw-records",
+			"style": {
+				"navigationBarTitleText": "提现记录",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/my/agreement",
+			"style": {
+				"navigationBarTitleText": "协议详情",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/msg/msg",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/msg/detail",
+			"style": {
+				"navigationBarTitleText": "消息详情"
+			}
+		},
+		{
+			"path": "pages/webView/webView",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "省钱兄文旅",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F5F7FF",
+		"h5": {
+			"titleNView": false
+		}
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FF6600",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/tabbar/shouye_.png",
+				"selectedIconPath": "static/image/tabbar/shouye.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/order/list",
+				"iconPath": "static/image/tabbar/dingdan_.png",
+				"selectedIconPath": "static/image/tabbar/dingdan.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/image/tabbar/a-wode_.png",
+				"selectedIconPath": "static/image/tabbar/a-wode.png",
+				"text": "我的"
+			}
+		]
+	},
+	"uniIdRouter": {},
+	"subPackages": [
+		{
+			"root": "merchant-portal",
+			"pages": [
+				{
+					"path": "onboarding/apply",
+					"style": {
+						"navigationBarTitleText": "商户入驻",
+						"navigationBarTextStyle": "white",
+						"navigationBarBackgroundColor": "#1C1C1E",
+						"backgroundColor": "#FAFAF8"
+					}
+				},
+				{
+					"path": "onboarding/result",
+					"style": {
+						"navigationBarTitleText": "提交结果",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "center/index",
+					"style": {
+						"navigationBarTitleText": "商户中心",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "center/verify",
+					"style": {
+						"navigationBarTitleText": "订单核销",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "center/info",
+					"style": {
+						"navigationBarTitleText": "商户信息",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "center/wallet",
+					"style": {
+						"navigationBarTitleText": "资金管理",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "center/wallet-withdraw",
+					"style": {
+						"navigationBarTitleText": "申请提现",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "center/wallet-withdraw-account",
+					"style": {
+						"navigationBarTitleText": "收款方式",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "center/wallet-deposit",
+					"style": {
+						"navigationBarTitleText": "缴纳保证金",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "center/wallet-fund-records",
+					"style": {
+						"navigationBarTitleText": "资金明细",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "center/wallet-withdraw-records",
+					"style": {
+						"navigationBarTitleText": "提现明细",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "center/orders-pending",
+					"style": {
+						"navigationBarTitleText": "待处理订单",
+						"navigationBarTextStyle": "black"
+					}
+				}
+			]
+		},
+		{
+			"root": "merchant-hotel",
+			"pages": [
+				{
+					"path": "services",
+					"style": {
+						"navigationBarTitleText": "房间管理",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "service-edit",
+					"style": {
+						"navigationBarTitleText": "编辑房间",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "store-decor",
+					"style": {
+						"navigationBarTitleText": "门店详情装修",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "orders",
+					"style": {
+						"navigationBarTitleText": "订单管理",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "order-detail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "room-standards",
+					"style": {
+						"navigationBarTitleText": "客房标准",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "room-standard-edit",
+					"style": {
+						"navigationBarTitleText": "编辑客房标准",
+						"navigationBarTextStyle": "black"
+					}
+				}
+			]
+		},
+		{
+			"root": "merchant-restaurant",
+			"pages": [
+				{
+					"path": "services",
+					"style": {
+						"navigationBarTitleText": "菜品管理",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "service-edit",
+					"style": {
+						"navigationBarTitleText": "编辑菜品",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "store-decor",
+					"style": {
+						"navigationBarTitleText": "门店详情装修",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "orders",
+					"style": {
+						"navigationBarTitleText": "订单管理",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "order-detail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"navigationBarTextStyle": "black"
+					}
+				}
+			]
+		},
+		{
+			"root": "merchant-travel",
+			"pages": [
+				{
+					"path": "services",
+					"style": {
+						"navigationBarTitleText": "路线管理",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "service-edit",
+					"style": {
+						"navigationBarTitleText": "编辑路线",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "store-decor",
+					"style": {
+						"navigationBarTitleText": "门店详情装修",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "orders",
+					"style": {
+						"navigationBarTitleText": "订单管理",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "order-detail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "order-guests",
+					"style": {
+						"navigationBarTitleText": "出行人信息",
+						"navigationBarTextStyle": "black"
+					}
+				}
+			]
+		},
+		{
+			"root": "merchant-culture",
+			"pages": [
+				{
+					"path": "services",
+					"style": {
+						"navigationBarTitleText": "商品管理",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "service-edit",
+					"style": {
+						"navigationBarTitleText": "编辑商品",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "store-decor",
+					"style": {
+						"navigationBarTitleText": "门店详情装修",
+						"navigationBarTextStyle": "black"
+					}
+				},
+				{
+					"path": "orders",
+					"style": {
+						"navigationBarTitleText": "订单管理",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "order-detail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"navigationBarTextStyle": "black"
+					}
+				}
+			]
+		},
+		{
+			"root": "mobile-design",
+			"pages": [
+				{
+					"path": "activity/detail",
+					"style": {
+						"navigationBarTitleText": "活动详情"
+					}
+				},
+				{
+					"path": "ai/chat",
+					"style": {
+						"navigationBarTitleText": "AI 助手"
+					}
+				},
+				{
+					"path": "booking/confirm",
+					"style": {
+						"navigationBarTitleText": "确认预订"
+					}
+				},
+				{
+					"path": "booking/hotel-confirm",
+					"style": {
+						"navigationBarTitleText": "确认预定"
+					}
+				},
+				{
+					"path": "booking/route-confirm",
+					"style": {
+						"navigationBarTitleText": "确认预约"
+					}
+				},
+				{
+					"path": "booking/goods-confirm",
+					"style": {
+						"navigationBarTitleText": "确认订单"
+					}
+				},
+				{
+					"path": "booking/coupon-select",
+					"style": {
+						"navigationBarTitleText": "选择优惠券"
+					}
+				},
+				{
+					"path": "canteen/reserve",
+					"style": {
+						"navigationBarTitleText": "食堂预约"
+					}
+				},
+				{
+					"path": "canteen/records",
+					"style": {
+						"navigationBarTitleText": "预约记录",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "canteen/detail",
+					"style": {
+						"navigationBarTitleText": "预约详情"
+					}
+				},
+				{
+					"path": "goose/list",
+					"style": {
+						"navigationBarTitleText": "卤鹅",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "goose/detail",
+					"style": {
+						"navigationBarTitleText": "商家详情"
+					}
+				},
+				{
+					"path": "goose/menu",
+					"style": {
+						"navigationBarTitleText": "全部菜品"
+					}
+				},
+				{
+					"path": "goose/dish-detail",
+					"style": {
+						"navigationBarTitleText": "菜品详情"
+					}
+				},
+				{
+					"path": "hotel/list",
+					"style": {
+						"navigationBarTitleText": "酒店住宿",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "hotel/detail",
+					"style": {
+						"navigationBarTitleText": "酒店详情"
+					}
+				},
+				{
+					"path": "hotel/review-list",
+					"style": {
+						"navigationBarTitleText": "全部评价",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "hotel/room-detail",
+					"style": {
+						"navigationBarTitleText": "房型详情",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "route/list",
+					"style": {
+						"navigationBarTitleText": "精选线路",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "route/detail",
+					"style": {
+						"navigationBarTitleText": "线路详情"
+					}
+				},
+				{
+					"path": "route/itinerary",
+					"style": {
+						"navigationBarTitleText": "行程安排"
+					}
+				},
+				{
+					"path": "route/store",
+					"style": {
+						"navigationBarTitleText": "门店详情"
+					}
+				},
+				{
+					"path": "route/store-routes",
+					"style": {
+						"navigationBarTitleText": "门店线路",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "route/review-list",
+					"style": {
+						"navigationBarTitleText": "全部评价",
+						"navigationBarTextStyle": "black",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "scenic/list",
+					"style": {
+						"navigationBarTitleText": "景区旅游",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "scenic/detail",
+					"style": {
+						"navigationBarTitleText": "景区详情"
+					}
+				},
+				{
+					"path": "activity/list",
+					"style": {
+						"navigationBarTitleText": "精彩活动",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "feedback/index",
+					"style": {
+						"navigationBarTitleText": "问题反馈"
+					}
+				},
+				{
+					"path": "food-map/index",
+					"style": {
+						"navigationBarTitleText": "美食地图"
+					}
+				},
+				{
+					"path": "map/index",
+					"style": {
+						"navigationBarTitleText": "地图服务"
+					}
+				},
+				{
+					"path": "parking/index",
+					"style": {
+						"navigationBarTitleText": "停车通行"
+					}
+				},
+				{
+					"path": "heritage/index",
+					"style": {
+						"navigationBarTitleText": "特色非遗"
+					}
+				},
+				{
+					"path": "heritage/craft-intro",
+					"style": {
+						"navigationBarTitleText": "非遗介绍"
+					}
+				},
+				{
+					"path": "heritage/detail",
+					"style": {
+						"navigationBarTitleText": "非遗名录"
+					}
+				},
+				{
+					"path": "heritage/catalog",
+					"style": {
+						"navigationBarTitleText": "非遗名录",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "heritage/shop-list",
+					"style": {
+						"navigationBarTitleText": "非遗好店",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "heritage/shop-detail",
+					"style": {
+						"navigationBarTitleText": "好店详情"
+					}
+				},
+				{
+					"path": "heritage/goods-list",
+					"style": {
+						"navigationBarTitleText": "非遗好物",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "heritage/goods-detail",
+					"style": {
+						"navigationBarTitleText": "好物详情"
+					}
+				},
+				{
+					"path": "heritage/review-list",
+					"style": {
+						"navigationBarTitleText": "全部评价",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "heritage/order-confirm",
+					"style": {
+						"navigationBarTitleText": "确认订单"
+					}
+				},
+				{
+					"path": "heritage/address-list",
+					"style": {
+						"navigationBarTitleText": "收货地址"
+					}
+				},
+				{
+					"path": "heritage/address-form",
+					"style": {
+						"navigationBarTitleText": "新增地址"
+					}
+				},
+				{
+					"path": "notice/list",
+					"style": {
+						"navigationBarTitleText": "公告通知",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 50
+					}
+				},
+				{
+					"path": "notice/detail",
+					"style": {
+						"navigationBarTitleText": "公告详情"
+					}
+				},
+				{
+					"path": "search/index",
+					"style": {
+						"navigationBarTitleText": "搜索"
+					}
+				},
+				{
+					"path": "transport/list",
+					"style": {
+						"navigationBarTitleText": "公共交通",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "transport/schedule",
+					"style": {
+						"navigationBarTitleText": "公交时刻表"
+					}
+				},
+				{
+					"path": "transport/stations",
+					"style": {
+						"navigationBarTitleText": "公交线路站点"
+					}
+				},
+				{
+					"path": "transport/track",
+					"style": {
+						"navigationBarTitleText": "公交实时位置"
+					}
+				}
+			]
+		}
+	]
+}
